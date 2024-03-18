@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    
+    <title>curriculum</title>
+</head>
+<body>
+
+    
+    
+<div><h1></h1></div>
+    
+    
+    <header>
+
+
+
+
+        
+        
+
+        <h2 id="nombre">Luis Lizana</h2>
+        <h3 id="info">Informatico</h3>
+
+        <br>
+        <h3 id="perfil"> 👤PERFIL PERSONAL  </h3>
+
+        <p class="desc">Estudiante de tercer semestre de la carrera de Ingeniería en Informática,
+                         con conocimientos básicos en Programación, <br> Base de Datos y Diseño de Prototipos. Con disposición para seguir aprendiendo y progresar..</p>
+            
+            
+            <h3 id="formacion">🎓FORMACIÓN ACADÉMICA</h3>
+            
+            
+            <p id="forma">
+                LICENCIATURA EN INGENIERÍA EN
+                INFORMÁTICA (ESTUDIANTE)
+                <br><br>
+                TECNICO PROFESIONAL EN
+                ADMINISTRACION
+                <br><br>
+                Instituto Profesional DuocUC
+                (2023- actualmente)
+                <br><br>
+                Colegio Fernando De Aragon</p>
+
+
+
+                <h3 id="experiencia"> 💼EXPERIENCIA LABORAL </h3>
+
+                <p id="exp">Que es eso? </p>
+
+
+
+
+   
+        <img class="luis"  src="imagenes/images.jpg" >
+
+        
+        <h4 id="datos">👤20 años <br>🏴Nacionalidad Chilena <br>📅 16 de Marzo de 2004</h3>
+        
+            
+         <h2 id="conocimientos">🖥️Conocimientos </h2>  
+         <p id="conocimientos1"> Programacion <br> Consulta de base de datos <br> Prototipado basico </p> 
+        <h2 id="Contacto">&#128373; Contacto</h2>
+
+        <h2 id="habilidades">🧠Habilidades</h2>
+        <p id="habilidades1">Pro activo <br> Capacidad de trabajo en equipo <br>Mente abierta <br>Resolución de problemas <br>Capacidad de adaptación         </p>
+
+        
+        <footer>
+        <a target="_blank" href="https://wa.me/+56951493747">       
+        <button><img class="redes" src="imagenes/whatsapp (1).png" ></button>
+        
+           </a>
+       
+
+        
+            <a target="_blank" href="https://www.facebook.com/groups/396375857160019/?hoisted_section_header_type=recently_seen&multi_permalinks=3141339985996912">
+            <button><img class="facebook" src="imagenes/facebook.png" ></button>
+            </a>
+       
+            <div class="cursor"></div>
+
+            <script type="text/javascript">
+              
+              const cursor = document.querySelector(".cursor");
+              
+              
+              //seguir el cursor
+              document.addEventListener ("mousemove", (e) =>{
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursor.style.top = y + "px";
+                cursor.style.left = x + "px";
+                cursor.style.display = "block";
+
+
+                //efectos cuando el mouse se para
+                function mouseStopped(){
+                    cursor.style.display= "none";
+
+
+                }
+                timeout = setTimeout(mouseStopped,1000);
+
+              });
+              //efectos del cursor cuando se sale de la pantalla
+
+              document.addEventListener("mouseout",()=> {
+
+                cursor.style.display = "none";
+
+
+              });
+              </script>
+
+        
+            <a onclick="openGmail()">    
+            <button><img class="gmail" src="imagenes/gmail.png" ></button>
+            <script>
+                    function openGmail() {
+            window.open('https://mail.google.com/mail/?view=cm&fs=1&to=luislizanadeep@gmail.com', '_blank');
+             }
+            
+            </script>
+               </a>
+            </footer>
+
+
+
+    
+         
+   
+   
+   
+        </header>
+
+
+    <br><br><br>
+  
+
+    
+
+  
+
+
+</body>
+
+
+
+<link rel="stylesheet" href="style.css">
+</html>
